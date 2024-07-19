@@ -2,11 +2,11 @@
 
 --Find the app with an ID of 1880--
 SELECT * FROM analytics
-playstore-# WHERE id = 1880;
+WHERE id = 1880;
 
 --Find the ID and app name for all apps that were last updated on August 01, 2018.--
 SELECT id, app_name FROM analytics
-playstore-# WHERE last_updated = '2018-08-01';
+WHERE last_updated = '2018-08-01';
 
 --Count the number of apps in each category, e.g. “Family | 1972”.--
 SELECT category, COUNT(*) FROM analytics
